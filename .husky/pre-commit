@@ -1,0 +1,4 @@
+
+ npm test -- --watchAll=false --silent
+
+ npm test -- --watchAll=false --silent
