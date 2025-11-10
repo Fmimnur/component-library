@@ -2,14 +2,15 @@
 FROM node:18-alpine AS builder
 
 # Required working directory name
-WORKDIR /Mimnur_Ferdous_ui_garden_build_checks
+WORKDIR /Mimnur_Ferdous_ui_garden_build_
+
 
 # Copy and install dependencies
 COPY package*.json ./
 RUN npm ci
 
 # Copy the rest of the source code
-COPY . .
+COPY . 
 
 # Build production version
 RUN npm run build
